@@ -8,7 +8,7 @@ jobs:
         name: Checkout
         uses: actions/checkout@v2
       -
-        name: Generate
+        name: Generate Storybook
         run: yarn install && yarn build-storybook
       -
         name: Deploy to GitHub Pages

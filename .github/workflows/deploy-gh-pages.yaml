@@ -16,6 +16,6 @@ jobs:
         uses: crazy-max/ghaction-github-pages@v2
         with:
           target_branch: react
-          build_dir: ./storybook/static
+          build_dir: ./.storybook/static
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

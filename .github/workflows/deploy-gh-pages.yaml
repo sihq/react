@@ -9,13 +9,13 @@ jobs:
         uses: actions/checkout@v2
       -
         name: Generate
-        run: yarn install && yarn storybook-build
+        run: yarn install && yarn build-storybook
       -
         name: Deploy to GitHub Pages
         if: success()
         uses: crazy-max/ghaction-github-pages@v2
         with:
-          target_branch: gh-pages
+          target_branch: react
           build_dir: ./storybook/static
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
